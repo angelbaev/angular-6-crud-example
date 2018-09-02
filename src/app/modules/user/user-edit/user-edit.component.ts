@@ -10,7 +10,7 @@ export class UserEditComponent implements OnInit {
   /**
    * @type {number}
    */
-  protected userId: number;
+  public userId: number;
 
   /***
    * UserEditComponent component constructor.

@@ -19,7 +19,7 @@ export class UserListComponent implements OnInit {
   /**
    * @type {Array}
    */
-  protected users: User[] = [];
+  public users: User[] = [];
 
   /**
    * @type {any}

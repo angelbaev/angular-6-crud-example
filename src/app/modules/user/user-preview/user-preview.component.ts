@@ -13,7 +13,7 @@ export class UserPreviewComponent implements OnInit {
   /**
    * @type {User} user
    */
-  protected user: User;
+  public user: User;
 
   /***
    * @param {UserService} userService
