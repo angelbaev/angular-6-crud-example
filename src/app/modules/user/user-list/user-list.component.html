@@ -1,0 +1,27 @@
+<div class="col-md-12">
+  <h2> Users</h2>
+  <app-button [button]="addButton" [icon]="'fa-plus'" [cssClass]="'btn btn-success'"></app-button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>
+        <app-action-buttons [actions]="actions[getUser(user).id].actions"></app-action-buttons>
+        <!--<button class="btn btn-danger"> Delete</button>-->
+        <!--<button class="btn btn-success" style="margin-left: 20px;"> Edit</button></td>-->
+    </tr>
+    </tbody>
+  </table>
+</div>

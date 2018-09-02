@@ -1,0 +1,2 @@
+<a *ngIf="routerLink" [routerLink]="[routerLink]" class="btn"><i class="fa fa-arrow-left"></i></a>
+<a *ngIf="!routerLink" href="javascript:void(0)" (click)="redirectBack()" class="btn"><i class="fa fa-arrow-left"></i></a>

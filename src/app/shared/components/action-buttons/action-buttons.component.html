@@ -1,0 +1,18 @@
+<span *ngFor="let action of actions; let i = index">
+  <a *ngIf="action.url"
+     [queryParams]="action.queryParams"
+     class="{{ action.cssClass }}"
+     title="{{ action.text }}"
+     [routerLink]="action.url">
+     <i *ngIf="action.icon" class="{{ action.icon }}"></i>
+     <span *ngIf="!action.icon">{{ action.text }}</span>
+  </a>
+  <a *ngIf="!action.url"
+     class="{{ action.cssClass }}"
+     title="{{ action.text }}"
+     href="javascript:void(0)"
+     (click)="action.callback(action.data)">
+    <i *ngIf="action.icon" class="{{ action.icon }}"></i>
+    <span *ngIf="!action.icon">{{ action.text }}</span>
+  </a>
+</span>

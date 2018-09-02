@@ -1,0 +1,4 @@
+<a *ngIf="button.url" class="{{ cssClass }}" [routerLink]="button.url" [queryParams]="{}">
+  <i *ngIf="icon" class="fa {{ icon }}"></i>
+  {{button.text}}
+</a>
