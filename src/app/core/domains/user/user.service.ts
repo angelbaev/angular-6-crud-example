@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { of } from 'rxjs';
 
-import { User } from '../domains/user/user.model';
-import { BaseService } from './base.service';
+import { User } from 'user.model.ts';
+import { BaseService } from './../../services/base.service.ts';
 
 @Injectable({
   providedIn: 'root'

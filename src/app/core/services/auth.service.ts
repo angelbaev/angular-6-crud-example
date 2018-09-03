@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 
 import { BaseService } from './base.service';
 import { StorageService } from './storage.service';
-import { UserService } from './user.service';
+import { UserService } from './../domains/user/user.service.ts';
 
 @Injectable({
   providedIn: 'root'
@@ -35,6 +35,12 @@ export class AuthService extends BaseService {
      */
   public login(username: string, password: string) {
     return this.userService.login(username, password);
+  }
+
+  public logout(): void {
+    this.storageService.remove('loggedIn');
+    this.storageService.remove('logged');
+    this.loggedInStatus = false;
   }
 
   /**

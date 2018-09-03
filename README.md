@@ -9,13 +9,14 @@ Angular 6 CRUD Example
            |-- home.module.ts
      |-- core
        |-- [+] authentication
-       |-- [+] footer
+       |-- [+] components
+           |-- [+] header
+           |-- [+] footer
        |-- [+] guards
        |-- [+] http
        |-- [+] interceptors
        |-- [+] mocks
        |-- [+] services
-       |-- [+] header
        |-- core.module.ts
        |-- ensureModuleLoadedOnceGuard.ts
        |-- logger.service.ts

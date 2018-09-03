@@ -46,9 +46,11 @@ export class LoginComponent extends BaseFormComponent implements OnInit {
       return;
     }
 
+    this.service.logout();
+
     this.service.login(
-        this.form.controls.email.value,
-        this.form.controls.password.value
+        this.form.value.email,
+        this.form.value.password
     ).subscribe((result: any) => {
       if (result !== null) {
         this.invalidLogin = false;
