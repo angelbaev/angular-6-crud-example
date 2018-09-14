@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 
 import { BaseService } from './base.service';
 import { StorageService } from './storage.service';
-import { UserService } from './../domains/user/user.service.ts';
+import { UserService } from './../domains/user/user.service';
 
 @Injectable({
   providedIn: 'root'

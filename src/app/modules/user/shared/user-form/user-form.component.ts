@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { UserService } from '../../../../core/domains/user/user.service.ts';
+import { UserService } from '../../../../core/domains/user/user.service';
 import { BaseFormComponent } from '../../../../shared/components/base/base-form/base-form.component';
 import { User } from '../../../../core/domains/user/user.model';
 

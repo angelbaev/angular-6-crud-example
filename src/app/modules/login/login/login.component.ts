@@ -23,6 +23,7 @@ export class LoginComponent extends BaseFormComponent implements OnInit {
    * @param {Router} router
    * @param {FormBuilder} formBuilder
    * @param {AuthService} service
+   * @param {StorageService} storageService
    */
   constructor(protected router: Router,
               formBuilder: FormBuilder, 
